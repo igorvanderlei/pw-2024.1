@@ -2,9 +2,11 @@ package br.edu.ufape.pw.mensageiro.negocio.basica;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
+import lombok.Data;
 
 @Entity
-public class MensagemPrivate extends Mensagem {
+@Data
+public class MensagemPrivada extends Mensagem {
 	
 	@ManyToOne
 	private Usuario destinatario;

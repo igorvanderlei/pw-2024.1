@@ -1,0 +1,18 @@
+spring.application.name: mensageiro
+
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/pw_db
+    username: pw
+    password: pw2024
+  jpa:
+    hibernate:
+     ddl-auto: update
+     # naming:
+     #   physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
+    # This should no longer be needed with Hibernate 6
+    #database-platform: org.hibernate.spatial.dialect.postgis.PostgisPG10Dialect
+    show-sql: true
+    database: postgresql
+   
